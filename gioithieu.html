@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nội Thất Sang Trọng - Premium Furniture</title>
+    <link rel="stylesheet" href="./css/gioithieu.css">
+    <link rel="stylesheet" href="./css/headandfoot.css">
+</head>
+<body>
+     <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="header-container" id="header-container" >
+            <div class="logo" id="logo">
+                <img src="./image/logo nội thất.png" alt="logo">
+            </div>
+
+            <nav class="nav-menu" id="nav-menu">
+                <a href="./trangchu.html" class="nav-link">TRANG CHỦ</a>
+                <a href="./gioithieu.html" class="nav-link">GIỚI THIỆU</a>
+                <a href="./bosuutap.html" class="nav-link">BỘ SƯU TẬP/DỰ ÁN</a>
+                <a href="./lienhe.html" class="nav-link">LIÊN HỆ</a>
+                
+                <div class="dropdown">
+    <ul class="menu">
+        <li class="danhmuc">
+            <a href="#"> DANH MỤC SẢN PHẨM ▾ </a>
+            <ul class="sub-danhmuc">
+                <li><a href="./sofa.html">GHẾ SOFA</a></li>
+                <li><a href="./ban.html">BÀN</a></li>
+                <li><a href="./ghe.html">GHẾ</a></li>
+                <li><a href="./tuvake.html">TỦ VÀ KỆ</a></li>
+                <li><a href="./giuong.html">GIƯỜNG NGỦ</a></li>
+                <li><a href="./bep.html">BẾP</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>   
+            </nav>
+    </header>
+
+    <!-- content -->
+    <div class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">NHÓM 3-DIGITAL MKT-MYEN</h1>
+             <h1 class="hero-title">Thiết Kế Nội Thất Sang Trọng</h1>
+            <p class="hero-desc">Biến không gian sống của bạn thành một tác phẩm nghệ thuật với bộ sưu tập nội thất cao cấp của chúng tôi.</p>
+            <button class="btn-primary" onclick="scrollToSection('products')">Xem Sản Phẩm</button>
+        </div>
+        <div class="hero-image">
+            <img src="./image/120ffefa4d48f5406c1c60176152640a.jpg" alt="Nội thất sang trọng">
+        </div>
+    </div>
+
+
+    <!-- về chúng tôi -->
+    <div class="why-us" id="about">
+        <h2 class="section-title"style="text-align: center;"  >Tại Sao Chọn Chúng Tôi?</h2>
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">✓</div>
+                <h3>Chất Lượng Hàng Đầu</h3>
+                <p>Tất cả sản phẩm được chọn lọc kỹ lưỡng từ các nhà cung cấp uy tín quốc tế.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">✓</div>
+                <h3>Giá Cạnh Tranh</h3>
+                <p>Cung cấp giá tốt nhất trên thị trường với chất lượng đảm bảo.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">✓</div>
+                <h3>Giao Hàng Nhanh</h3>
+                <p>Giao hàng toàn bộ thành phố trong vòng 24-48 giờ, miễn phí vận chuyển.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">✓</div>
+                <h3>Bảo Hành Dài Hạn</h3>
+                <p>Bảo hành 2-5 năm tùy theo loại sản phẩm, hỗ trợ kỹ thuật 24/7.</p>
+            </div>
+        </div>
+    </div>
+
+     <!-- lienhe  -->
+         <div id="contact">
+        <h2>Liên Hệ Chúng Tôi</h2>
+        <div class="contact-info">
+            <div class="info-item">
+                <h3>Địa Chỉ</h3>
+                <p> Lầu 5 Nam Kỳ Khởi Nghĩa, TP. Hồ Chí Minh</p>
+            </div>
+            <div class="info-item">
+                <h3>Điện Thoại</h3>
+                <p>+84 (28) 1234 5678</p>
+            </div>
+            <div class="info-item">
+                <h3>Email</h3>
+                <p><a href="mailto:MOTIF@GMAIL.COM">MOTIF@GMAIL.COM</a></p>
+            </div>
+            <div class="info-item">
+                <h3>Giờ Làm Việc</h3>
+                <p>Thứ 2 - Thứ 7: 9:00 - 18:00<br>Chủ Nhật: 10:00 - 17:00</p>
+            </div>
+        </div>
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+            <input type="text" placeholder="Tên của bạn" required>
+            <input type="email" placeholder="Email của bạn" required>
+            <textarea placeholder="Lời nhắn" rows="5" required></textarea>
+            <button type="submit" class="btn btn-primary">Gửi</button>
+        </form>
+
+          <div class="buy">
+            <a href="./bep.html" class="buy-bottom">MUA SẮM ONLINE</a>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+    <p>www.motifstudio.com | Hotline: 776487412</p>
+</footer>
+<script src="./jss/gioithieu.js"></script>
+</body>
+</html>

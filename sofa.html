@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOFA</title>
+    <link rel="stylesheet" href="./css/headandfoot.css">
+    <link rel="stylesheet" href="./css/sanpham.css">
+</head>
+<body>
+     <!-- HEADER -->
+   <header class="header" id="header">
+        <div class="header-container" id="header-container" >
+            <div class="logo" id="logo">
+                <img src="./image/logo nội thất.png" alt="logo">
+            </div>
+
+            <nav class="nav-menu" id="nav-menu">
+                <a href="./trangchu.html" class="nav-link">TRANG CHỦ</a>
+                <a href="./lienhe.html" class="nav-link">GIỚI THIỆU</a>
+                <a href="./bosuutap.html" class="nav-link">BỘ SƯU TẬP/DỰ ÁN</a>
+                <a href="./lienhe.html" class="nav-link">LIÊN HỆ</a>
+                
+                <div class="dropdown">
+    <ul class="menu">
+        <li class="danhmuc">
+            <a href="#"> DANH MỤC SẢN PHẨM ▾ </a>
+            <ul class="sub-danhmuc">
+                <li><a href="./sofa.html">GHẾ SOFA</a></li>
+                <li><a href="./ban.html">BÀN</a></li>
+                <li><a href="./ghe.html">GHẾ</a></li>
+                <li><a href="./tuvake.html">TỦ VÀ KỆ</a></li>
+                <li><a href="./giuong.html">GIƯỜNG NGỦ</a></li>
+                <li><a href="./bep.html">BẾP</a></li>i>
+            </ul>
+        </li>
+    </ul>
+</div>   
+            </nav>
+    </header>
+     <div id="product-list">  
+    <div class="product">
+        <img src="./image/sofa1.jpg">
+        <h3>Sản phẩm 1</h3>
+        <p class="price">3.000.000</p>
+        <button onclick="addToCart('Sản phẩm 1', 3000000)">Mua ngay</button>
+    </div>
+
+    <div class="product">
+        <img src="./image/sofa2.jpg">
+        <h3>Sản phẩm 2</h3>
+        <p class="price">4.500.000</p>
+        <button onclick="addToCart('Sản phẩm 2', 4500000)">Mua ngay</button>
+    </div>
+
+    <div class="product">
+        <img src="./image/sof1.jpg">
+        <h3>Sản phẩm 3</h3>
+        <p class="price">2.500.000</p>
+        <button onclick="addToCart('Sản phẩm 3', 2500000)">Mua ngay</button>
+    </div>
+
+     <div class="product">
+        <img src="./image/sof2.jpg">
+        <h3>Sản phẩm 4</h3>
+        <p class="price">5.500.000</p>
+        <button onclick="addToCart('Sản phẩm 4', 5500000)">Mua ngay</button>
+    </div>
+
+     <div class="product">
+        <img src="./image/sofa5.jpg">
+        <h3>Sản phẩm 5</h3>
+        <p class="price">2.500.000</p>
+        <button onclick="addToCart('Sản phẩm 5', 2500000)">Mua ngay</button>
+    </div>
+
+     <div class="product">
+        <img src="./image/sof3.jpg">
+        <h3>Sản phẩm 6</h3>
+        <p class="price">4.500.000</p>
+        <button onclick="addToCart('Sản phẩm 6', 4500000)">Mua ngay</button>
+    </div>
+
+     <div class="product">
+        <img src="./image/sofa7.jpg">
+        <h3>Sản phẩm 7</h3>
+        <p class="price">1.000.000</p>
+        <button onclick="addToCart('Sản phẩm 7', 1000000)">Mua ngay</button>
+    </div>
+
+     <div class="product">
+        <img src="./image/sofa8.jpg">
+        <h3>Sản phẩm 8</h3>
+        <p class="price">1.500.000</p>
+        <button onclick="addToCart('Sản phẩm 8', 1500000)">Mua ngay</button>
+    </div>
+
+</div>
+
+<div id="cart-box">
+    <h2>Giỏ hàng</h2>
+
+    <div id="cart"></div>
+
+    <h3>Tổng tiền: <span id="total">0</span>₫</h3>
+
+    <button id="clear-cart" onclick="clearCart()">Xóa toàn bộ</button>
+
+    <button id="buy" onclick="buyNow()">Mua hàng</button>
+
+</div>
+
+<div id="info-box">
+    <h3>Thông tin khách hàng</h3>
+
+    <input type="text" id="cus-name" placeholder="Họ và tên">
+    <input type="text" id="cus-phone" placeholder="Số điện thoại">
+    <input type="text" id="cus-address" placeholder="Địa chỉ nhận hàng">
+
+    <button id="confirm-buy" onclick="confirmBuy()">Xác nhận mua</button>
+</div>
+
+<div id="invoice"></div>
+
+
+      <footer class="footer">
+    <p>www.motifstudio.com | Hotline: 776487412</p>
+
+   <script src="./jss/sanpham.js"></script>
+</body>
+
+</html>
+</body>
+</html>

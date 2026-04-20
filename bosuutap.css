@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background:#e6cd98;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  background-position: center;
+  min-height: 100vh;
+  background-size: cover;
+
+}
+
+/* ===== DROPDOWN ===== */
+.dropdown {
+  position: relative;
+}
+
+/* Reset cơ bản */
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.dropdown {
+    width: 250px;           
+    background-color: #d3b167;;  
+}
+
+/* Menu cấp 1 */
+.menu > li > a {
+    display: block;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid #d3b167;
+}
+
+.menu > li > a:hover {
+    background-color: #d3b167;
+}
+
+/* Menu cấp 2 */
+.sub-danhmuc {
+    display: none;          
+    background-color: #d4cfcf;
+
+}
+
+.sub-danhmuc li a {
+    display: block;
+    padding: 10px 25px;    
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid #555;
+}
+
+.sub-danhmuc li a:hover {
+    background-color: #d3b167;;
+}
+
+
+.danhmuc:hover .sub-danhmuc {
+    display: block;
+}
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 40px 0;
+    flex-wrap: wrap;
+    }
+.projects input[type="radio"]{
+    display: none;
+    }
+.card {
+    width: 300px;
+    height: 500px;
+    border: 1px solid #444;
+    padding: 10px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.card-list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+.card a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+.card img {
+    width: 100%;
+    height: 475px;
+    object-fit: cover;
+    display: block;
+    filter: brightness(60%);
+    transition: 0.4s;
+}
+.card:hover img {
+    filter: brightness(100%);
+    transform: scale(1.05);
+}
+.card:hover {
+    box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+    transform: translateY(-5px);
+}
+.card .caption {
+    position: absolute;
+    top: 65%;
+    left: 35%;
+    transform: translate(-50%, -50%); 
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    text-shadow: 0 0 6px black;
+}
+.big-image img {
+    width: 350px; 
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.info {
+    display: none; 
+    margin-top: 20px;
+    color: #fff;
+}
+
+#show-vanphong:checked ~ .info {
+    display: block; 
+}
+
+.btn {
+    margin-top: 15px;
+    padding: 10px 22px;
+    background: #c8b09a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 20px;
+    color: #fff;
+}
+
+/* KHUNG NỘI DUNG DƯỚI */
+.content {
+    display: none;
+    width: 60%;
+    margin: 0 auto;
+    padding: 30px;
+    background: #1f2225;
+    color: white;
+    border-radius: 6px;
+}
+.detail-box {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.detail-box img {
+    width: 200px;
+    height: 200px;
+    border-radius: 6px;
+}
+
+.text {
+    max-width: 1000px;
+    color: #dad7d7;
+    font-family: Arial;
+    padding: 30px;
+    line-height: 2.0;
+    font-size: small;
+    font-style: italic;
+    h2{
+        color: #a98a68;
+        font-size: larger;
+        
+    }
+}
+
+/* Ẩn input radio */
+.tabs input[type="radio"] {
+  display: none;
+}
+/* Khi radio được chọn thì hiển thị nội dung */
+#tab1:checked ~.content1{display: block;}
+
+#tab2:checked ~.content2{display: block;}
+
+#tab3:checked ~.content3{display: block;}
+
+#tab4:checked ~.content4{display: block;}
+.buy {
+    width: 100%;
+    text-align: right;    
+    padding: 20px 300px;   
+}
+
+.buy-bottom {
+    display: inline-block;
+    background: #c0a080;     
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.buy-bottom:hover {
+    background: #a98a68;
+    transform: translateY(-2px);
+}
+
+
+

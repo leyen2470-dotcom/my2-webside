@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1c1b1b;
+}
+
+
+
+/* Content */
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 80px 20px;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-title {
+    font-size: 36px;
+    color: #f8d187;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-desc {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+}
+
+/* Buttons */
+.btn-primary,
+.btn-add {
+    background-color: #8b6f47;
+    color: #fff;
+    border: none;
+    padding: 12px 32px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-add:hover {
+    background-color: #a68754;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(139, 111, 71, 0.3);
+}
+
+/* Về chúng tôi */
+.why-us {
+    padding: 80px 20px;
+    background-color: #f5f1ed;
+    text-align: center;
+}
+.section-title{
+    padding: 30px;
+    color: #947337;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature {
+    text-align: center;
+}
+
+.feature-icon {
+    font-size: 36px;
+    color: #8b6f47;
+    margin-bottom: 16px;
+    margin-top: 20px;
+}
+
+.feature h3 {
+    font-size: 18px;
+    color: #2a2a2a;
+    margin-bottom: 12px;
+}
+
+.feature p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* lienhe */
+#contact {
+  background-color: #1c1b1b;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+#contact h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.info-item {
+  background-color: #ffd182;
+  padding: 25px 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.info-item h3 {
+  color: #8b6f47;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.info-item p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #8b6f47;
+  background-color: #fff;
+}
+
+.info-item a {
+  color: #8b6f47;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.info-item a:hover {
+  color: #6b5435;
+  text-decoration: underline;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #8b6f47;
+  background-color: #fff;
+}
+
+.buy {
+    width: 100%;
+    text-align: right;    
+    padding: 20px 300px;   
+}
+
+.buy-bottom {
+    display: inline-block;
+    background: #c0a080;     
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.buy-bottom:hover {
+    background: #a98a68;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

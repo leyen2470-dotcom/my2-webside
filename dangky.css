@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1a1a1a;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  background-position: center;
+  min-height: 100vh;
+  background-size: cover;
+
+}
+
+/* ===== HEADER ===== */
+.header {
+  color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid rgba(201, 168, 118, 0.1);
+}
+
+.header-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.logo {
+  width: calc(30% - 20px);
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  img{
+    width: 30%;
+    padding: 10px;
+    }
+
+}
+
+.nav-menu {
+width: calc(60% - 20px);
+display: flex;
+align-items: center;
+gap: 15px;
+color: white;
+}
+
+.nav-link {
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+  color: white;
+  padding: 30px;
+}
+
+.nav-link:hover {
+  color: rgb(229, 195, 73);
+}
+
+/* ===== DROPDOWN ===== */
+.dropdown {
+  position: relative;
+}
+
+/* Reset cơ bản */
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.dropdown {
+    width: 250px;           
+    background-color: #d3b167;;  
+}
+
+/* Menu cấp 1 */
+.menu > li > a {
+    display: block;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid #d3b167;
+}
+
+.menu > li > a:hover {
+    background-color: #d3b167;
+}
+
+/* Menu cấp 2 */
+.sub-danhmuc {
+    display: none;          
+    background-color: #d4cfcf;
+
+}
+
+.sub-danhmuc li a {
+    display: block;
+    padding: 10px 25px;    
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid #555;
+}
+
+.sub-danhmuc li a:hover {
+    background-color: #d3b167;;
+}
+
+
+.danhmuc:hover .sub-danhmuc {
+    display: block;
+}
+.container {
+    width: 70%;
+    background: white;
+    margin: 40px auto;
+    padding: 25px;
+    box-shadow: 0 0 10px #9d9999;
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #072544;
+    border: none;
+    color: white;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dieukien {
+    font-size: 14px;
+    list-style: none;
+    padding-left: 0;
+}
+
+.dieukien li i {
+    margin-right: 5px;
+}
+
+#thongbao {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+}
+.footer {
+    width: 100%;
+    background: #111;       
+    color: #d6d6d6;        
+    text-align: center;    
+    padding: 20px 0;        
+    margin-top: 50px;      
+    font-size: 16px;
+    letter-spacing: 1px;
+    border-top: 1px solid #333; 
+}

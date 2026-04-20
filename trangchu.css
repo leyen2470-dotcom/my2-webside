@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../image/trangchu.jpg);
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  background-position: center;
+  min-height: 100vh;
+  background-size: cover;
+
+}
+
+/* ===== HEADER ===== */
+.header {
+  color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid rgba(201, 168, 118, 0.1);
+}
+
+.header-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.logo {
+  width: calc(30% - 20px);
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+
+  img {
+    width: 30%;
+    padding: 10px;
+  }
+
+}
+
+.nav-menu {
+  width: calc(60% - 20px);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: white;
+}
+
+.nav-link {
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+  color: white;
+  padding: 30px;
+}
+
+.nav-link:hover {
+  color: rgb(229, 195, 73);
+}
+
+/* ===== DROPDOWN ===== */
+.dropdown {
+  position: relative;
+}
+
+/* Reset cơ bản */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dropdown {
+  width: 250px;
+  background-color: #d3b167;
+  ;
+}
+
+/* Menu cấp 1 */
+.menu>li>a {
+  display: block;
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid #d3b167;
+}
+
+.menu>li>a:hover {
+  background-color: #d3b167;
+}
+
+/* Menu cấp 2 */
+.sub-danhmuc {
+  display: none;
+  background-color: #d4cfcf;
+
+}
+
+.sub-danhmuc li a {
+  display: block;
+  padding: 10px 25px;
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid #555;
+}
+
+.sub-danhmuc li a:hover {
+  background-color: #d3b167;
+  ;
+}
+
+
+.danhmuc:hover .sub-danhmuc {
+  display: block;
+}
+
+
+/* ===== CONTENT ===== */
+.container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  color: white;
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  padding: 0 20px;
+
+}
+
+.timkiem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 100px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+}
+
+.search-icon {
+  font-size: 1.25rem;
+}
+
+.timkiem input {
+  flex: 1;
+  background: none;
+  border: none;
+  color: rgb(253, 253, 253);
+  padding: 30px;
+}
+
+.timkiem input::placeholder {
+  color: white;
+}
+
+.tieude {
+  margin-bottom: 20px
+}
+
+.slogan {
+  font-size: 20pt;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+
+  a {
+    display: block;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 30px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.btn-khampha {
+  background: gray;
+}
+
+.btn-khampha:hover {
+  transform: translateY(-2px);
+}
+
+.btn-muasam {
+  background: #d3b167;
+  border-color: yellow;
+  margin: 20px;
+  text-align: right;
+  margin-left: 70px;
+}
+
+.btn-muasam:hover {
+  background: rgba(211, 132, 15, 0.2);
+}
+
+.btn-khampha:hover {
+  transform: translateX(4px);
+}
